@@ -1,23 +1,30 @@
 <?php  
-	// Send Email
+	require 'PHPMailerAutoload.php';
+	// Send Emailt
 	if (isset($_POST['submit'])){
-		$from = $_POST["email"]; // sender
-	    $subject = $_POST["subject"];
-	    $message = "This message is from: " . $_POST['name'] . "\n\n" . $_POST["message"];
-	    $message = wordwrap($message, 70);
-	    // send mail
-	    mail("rabintoy@gmail.com",$subject,$message,"From: " . $from);
+	    $mail = new PHPMailer;
+	    $mail->isSMTP();
+	    $mail->Host = getenv('POSTMARK_SMTP_SERVER');
+	    $mail->SMTPAuth = true;
+	    $mail->Username = getenv('POSTMARK_API_KEY');
+	    $mail->Password = getenv('POSTMARK_API_KEY'); 
+	    $mail->SMTPSecure = 'tls';
+
+	    $mail->From = $_POST["email"];
+		$mail->FromName = $_POST["name"];
+		$mail->addAddress('rabintoy@gmail.com', 'Raven Duran');
+
+		$mail->WordWrap = 70;
+		$mail->Subject = $_POST["subject"];
+		$mail->Body    = "This message is from: " . $_POST['name'] . "\n\n" . $_POST["message"];
+
+		if(!$mail->send()) {
+		   echo '<h2>The message could not be sent. Please Try Again</h2>';
+		   exit;
+		}
+
+		echo "<h2>Message has been successfully sent! We'll get to you the soonest.</h2>";
 	} else {
 		header("location: /");
 	}
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Message Sent</title>
-</head>
-<body>
-	<h2>Your Message Has Been Sent Successfully!</h2>
-</body>
-</html>
