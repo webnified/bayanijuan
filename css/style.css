@@ -122,7 +122,6 @@ a {
     height: 100%;
     background: url('../images/sun.png') no-repeat;   
     background-position: -525px -15px;
-    float: left;
 }
 
 #content_wrapper_1 {
@@ -131,8 +130,10 @@ a {
 }
 
 #content_wrapper_2 {
+    display: block;
     width:750px;    
-    padding: 10px 0px 50px 490px;
+    float: right;
+    padding: 10px 100px 50px 100px;
 }
 
 #image_wrapper_1 {
@@ -533,8 +534,46 @@ footer nav ul li:hover {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   footer nav ul li:last-child span{
     display: none;
   }
+
+  #content_wrapper_2 {
+    display: block;
+    width:750px;    
+    float: right;
+    padding: 10px 100px 50px 25px;
+  }
+
+  .inside_content h1 {
+   font-size: 20pt;
+   margin-bottom: 5px;
+  }
+
+  .inside_content h2 {
+    font-size: 13pt;
+    margin-bottom: 65px;
+  }
+
+  #flip_section h2.team_name, #flip_section h2.team_position {
+      font-size: 14pt;
+      letter-spacing: 2px;
+      line-height: 110%;
+  }
+
+  #flip_section h2.team_position {
+      color: #415381;
+      margin-bottom: 10px;
+  }
+
+  #flip_section .desc p {
+    font-size: 12px;
+    width: 350px;
+  }
+
+  #flip_section .desc p a {
+      color: #2970a5;
+  }
+
 }
