@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carikathon</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+<body>
+<!--<section class="wrapper">
+	<section id="image_wrapper_1">
+		<img src="images/sun.png" alt="Philippines Araw">
+	</section>	
+	<section id="content_wrapper_1">
+		<article id="content">
+			<figure>
+				<img src="images/bayanijuan_logo.png" alt="BayaniJuan Logo">
+			</figure>
+			<div id="inside_content">
+				 <span>	
+					<h1>Passion <b>+</b> Service <b>+</b> Excellence</h2>
+					<h2>We harness technology for Nation Building</h2>
+				 </span>
+				<span>
+					<p>BayaniJuan is a team of highly passionate web weavers on a mission to build the nation one step at a time by harnessing the power of technology, particurlarly the cloud and the web, to create robust and creative solutions.</p>
+				</span>
+			</div>
+		</article>
+	</section> 
+</section>-->
+<section class="wrapper">		
+	<section id="image_wrapper_2">
+		<img id="secondImage" src="images/sun.png" alt="Philippines Araw">
+	 </section>	 
+	<section id="content_wrapper_2">		
+		<article id="content">
+			<ul>
+				<li class="team_photo"><a href="#"><img src="images/raven.png" alt="Raven photo"><span class="team_desc">Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch </span></a></li>
+				<li class="team_photo"><a href="#"><img src="images/edsil.png" alt="Edsil photo"><span class="team_desc">Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch</span></a></li>
+				<div class="clear"></div>
+				<li class="team_photo"><a href="#"><img src="images/geoff.png" alt="Geoff photo"><span class="team_desc">Und wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernochUnd wenn es nicht umgeschrieben wurde, dann benutzen Sie es immernoch</span></a></li>
+				<div class="clear"></div>
+			</ul>
+		</article>
+	</section>	
+</section>
+ <div class="clear"></div>
+	<footer>
+		<nav>
+			<ul>
+				<li class="mission"><a href="#">Our Mission</a></li>
+				<li class="team"><a href="#">The Team</a></li>
+				<li class="reach"><a href="#">Reach Us</a></li>
+				<li id="webnified">From <span>Webnified</span> with love <img src="images/webnified_logo.png" alt="webnified logo"></li>
+			</ul>
+		</nav>
+	</footer>
+</body>	
+</html>
