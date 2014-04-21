@@ -3,12 +3,12 @@
 	if (isset($_POST['submit'])){
 		$from = $_POST["email"]; // sender
 	    $subject = $_POST["subject"];
-	    $message = $_POST["message"];
+	    $message = "This message is from: " . $_POST['name'] . "\n\n" . $_POST["message"];
 	    $message = wordwrap($message, 70);
 	    // send mail
-	    mail("rabintoy@gmail.com",$subject,$message,"From: $from\n");
+	    mail("rabintoy@gmail.com",$subject,$message,"From: " . $from);
 	} else {
-		header("location: index.php");
+		header("location: /");
 	}
 ?>
 <!doctype html>
