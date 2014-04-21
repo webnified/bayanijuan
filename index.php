@@ -59,7 +59,7 @@
 				<article class="desc">
 					<h2 class="team_name">Raven G. Duran</h2>
 					<h2 class="team_position">Project Manager</h2>
-					<p>Raven is the Team Leader of a starting Web Development Agency <a href="">Webnified&trade;</a>, consequently he is also a Student leader and a President of Various Organization(ICTS,SSC). An Ayala Young Leaders Alumni. With a highly passionate attitude towards technology for community</p>
+					<p>Raven is the Team Leader of a starting Web Development Agency <a href="http://www.webnified.com">Webnified&trade;</a>, consequently he is also a Student leader and a President of Various Organization(ICTS,SSC). An Ayala Young Leaders Alumni. With a highly passionate attitude towards technology for community</p>
 				</article>
 				<div class="clear">	</div>
 				<section class="flip_container">
@@ -91,7 +91,7 @@
 				<article class="desc">
 					<h2 class="team_name">Geoff D. Diaz</h2>
 					<h2 class="team_position">Web Developer</h2>
-					<p>Geoff is a Junior Backend Web Developer at <a href="">Webnified&trade;</a>, he tinkers to anything related to programming specially the technologies that exists in the web. He is always lookout for challenging problems on programming to solve. While he works to implements the interactivity and complexity stuffs on BayaNiJuan</p>
+					<p>Geoff is a Junior Backend Web Developer at <a href="http://www.webnified.com">Webnified&trade;</a>, he tinkers to anything related to programming specially the technologies that exists in the web. He is always lookout for challenging problems on programming to solve. While he works to implements the interactivity and complexity stuffs on BayaNiJuan</p>
 				</article>
 				<div class="clear">	</div>
 			</section>	
@@ -140,7 +140,7 @@
 				<li class="mission firstSlide buttons" id="active"><a href="#Mission" class="block"><span><img src="images/philippine_logo.png" alt="Philippine logo"></span>Our Mission</a></li>
 				<li class="team extend secondSlide buttons"><a href="#TeamWebnified" class="block"><span><img src="images/team_logo.png" alt="Team logo"></span>The Team</a></li>
 				<li class="reach extend thirdSlide buttons"><a href="#ReachUs" class="block"><span><img src="images/mail_logo.png" alt="Mail logo"></span>Reach Us</a></li>
-				<li id="webnified">From <a href="#" class="link">Webnified&trade;</a> with love <a href="www.webnified.com"><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
+				<li id="webnified">From <a href="http://www.webnified.com" class="link">Webnified&trade;</a> with love <a href="www.webnified.com"><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
 			</ul>
 		</nav>
 	</footer>
