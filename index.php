@@ -100,7 +100,7 @@
 	</div>	
 	<div class="slide">
 		<section id="form_wrapper">
-			<section class="inside_content two">
+				<section class="inside_content two">
 					<span>
 						<h1 class="form_h1">Up for Projects? Inquiry? Partner?</h1>
 						<h2 class="form_h2">Contact us, We're always up for something cool.</h2>
@@ -129,9 +129,11 @@
 					    </div>
 					</form>	
 				</section>
-			</section>
+		</section>
 	</div>
-	</div>
+	<div class="slide"></div>
+	<div class="slide"></div>
+ </div>
 </div>
  <div class="clear"></div>
 	<footer>
@@ -140,7 +142,7 @@
 				<li class="mission firstSlide buttons" id="active"><a href="#Mission" class="block"><span><img src="images/philippine_logo.png" alt="Philippine logo"></span>Our Mission</a></li>
 				<li class="team extend secondSlide buttons"><a href="#TeamWebnified" class="block"><span><img src="images/team_logo.png" alt="Team logo"></span>The Team</a></li>
 				<li class="reach extend thirdSlide buttons"><a href="#ReachUs" class="block"><span><img src="images/mail_logo.png" alt="Mail logo"></span>Reach Us</a></li>
-				<li id="webnified">From <a href="http://www.webnified.com" class="link">Webnified&trade;</a> with love <a href="www.webnified.com"><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
+				<li id="webnified"><span>From <a href="http://www.webnified.com" class="link">Webnified&trade;</a> with love <a href="http://www.webnified.com"></span><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
 			</ul>
 		</nav>
 	</footer>

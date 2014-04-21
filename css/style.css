@@ -122,6 +122,7 @@ a {
     height: 100%;
     background: url('../images/sun.png') no-repeat;   
     background-position: -525px -15px;
+    float: left;
 }
 
 #content_wrapper_1 {
@@ -131,7 +132,7 @@ a {
 
 #content_wrapper_2 {
     width:750px;    
-    padding: 30px 0px 50px 490px;
+    padding: 10px 0px 50px 490px;
 }
 
 #image_wrapper_1 {
@@ -524,9 +525,16 @@ nav ul li#webnified img {
 }
 
 footer nav ul li#active{
-  background: red;
+  background: #9A8E44;
 }
 
 footer nav ul li:hover {
-  background: red;
+  background: #9A8E44;
+}
+
+
+@media screen and (max-width: 700px) {
+  footer nav ul li:last-child span{
+    display: none;
+  }
 }
