@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**** Fonts ****/
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Bold.otf") format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-BoldItalic.otf") format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Italic.otf") format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-Light.otf") format('opentype');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/Quicksand-LightItalic.otf") format('opentype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/***Start Styel****/
+
+* {
+	font-family: 'Quicksand' !important;
+}
+
+body {
+	background: url(../images/chalkboard.jpg);	
+}
+
+h1, h2, p {
+	color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.wrapper {
+    width: 100%;
+}
+
+#content_wrapper_1 {
+    width:630px;
+    margin-left: 190px;
+    margin-top: 50px;
+    border:1px solid red;    
+}
+
+#content_wrapper_2 {
+    width:630px;
+    margin-left: 490px;
+    margin-top: 50px;
+    border:1px solid red;    
+}
+
+#image_wrapper_1 {
+    width: 530px;    
+    float: right;    
+    height: 624px;    
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+}
+
+#image_wrapper_2 {
+    width: 530px;
+    float: left;    
+    height: 624px;    
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+}
+
+#image_wrapper_2 > img {
+    position: relative;
+    right: 540px;
+}
+
+#content figure {
+    width: 406px;
+    margin: 0 auto;
+}
+
+#inside_content h1 {
+ font-size: 30pt;
+ margin-bottom: 5px;
+}
+
+#inside_content h2 {
+    font-size: 21pt;
+    margin-bottom: 35px;
+}
+
+#inside_content p {
+    line-height: 100%;
+}
+
+#inside_content span {
+    text-align: justify;
+}
+
+/***second page***/
+#content ul li.team_photo {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#content ul li a img {
+    float: left;
+}
+
+#content ul li a span.team_desc {
+    display: block;
+}
+
+nav .mission {
+    margin-left: 100px;
+}
+
+.mission {
+    list-style-image: url('../images/philippine_logo.png');
+    
+}
+
+nav ul {
+    background-color: #000;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    padding: 10px 0px;
+    z-index: 5;
+}
+
+nav ul li {
+    float:left;
+    vertical-align: middle;
+    padding: 0px 7px;
+}
+
+nav ul li#webnified {
+    float:right;
+    color: #fff;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 100%;
+
+}
+
+nav ul li a img {
+    vertical-align: middle;
+    padding: 0px 7px;
+}
+
+nav ul li#webnified img {
+    vertical-align: middle;
+    padding: 0px 5px;
+}
+
+nav ul li#webnified span {
+    color: blue;
+}
+.clear {
+    clear:both;
+}
