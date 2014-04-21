@@ -218,10 +218,14 @@ a {
     float: left;
     margin-bottom: 35px;
     perspective: 1000;
+    -moz-perspective: 1000;
+    -webkit-perspective: 1000;
 }
 
-.flip_container:hover .flipper {
+.flip_container:hover .flipper, .back:hover, .front:hover {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .flip_container, .flip_container .front img, .flip_container .back img {
@@ -231,22 +235,30 @@ a {
 
 .flipper {
     transition: 0.6s;
+    -moz-transition: 0.6s;
+    -webkit-transition: 0.6s;
     transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     position: relative;
 }
 
 .flippper .front, .flipper .back {
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
  }
 
-.flipper .font {
+.flipper .front {
     z-index: 2;
 }
 .flipper .back {
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 /*** Team Description ***/
@@ -343,14 +355,14 @@ a {
   background-repeat: no-repeat;
 }
 
-#email{
+.email{
   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
-#email:focus{
+.email:focus{
   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
@@ -382,7 +394,7 @@ input:focus, textarea:focus {
   width: 100%;
   border: #fbfbfb solid 4px;
   cursor:pointer;
-  background-color: #3498db;
+  background-color: #9a8e44;
   color:white;
   font-size:24px;
   padding-top:22px;
@@ -396,7 +408,7 @@ input:focus, textarea:focus {
 
 #button-blue:hover{
   background-color: rgba(0,0,0,0);
-  color: #0493bd;
+  color: #9a8e44;
 }
   
 .submit:hover {
@@ -437,13 +449,17 @@ input:focus, textarea:focus {
  
 #form_wrapper .two .form_h1 {
     font-size: 20pt;
-    margin: 0 auto;
     text-transform: uppercase;
 }
 #form_wrapper .two .form_h2 {
     font-size: 16pt;
     margin: 0 auto;
 }
+
+.form_main {
+  margin-top: 10px;
+}
+
 /*** footer ***/
 nav ul {
     background-color: #000;
@@ -464,9 +480,17 @@ nav ul li.extend {
     padding-top: 7px;
 }
 
+nav ul li:first-child {
+  padding-bottom: 7px;
+}
+
 nav ul li#webnified {
     float:right;
     color: #fff !important;
+}
+
+#webnified:hover {
+  background: none;
 }
 
 nav ul li .block {
@@ -481,6 +505,10 @@ nav ul li .link{
     color: #2970a5;
 }
 
+nav ul li .link:hover {
+  text-decoration: underline;
+}
+
 nav ul li a img {
     vertical-align: middle;
     padding: 0px 7px;
@@ -493,4 +521,12 @@ nav ul li#webnified img {
 
 .clear {
     clear:both;
+}
+
+footer nav ul li#active{
+  background: red;
+}
+
+footer nav ul li:hover {
+  background: red;
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Carikathon</title>
+	<title>BayaNiJuan</title>
 	<script src="js/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
@@ -102,29 +102,29 @@
 		<section id="form_wrapper">
 			<section class="inside_content two">
 					<span>
-						<h1 class="form_h1">Up for Projects? Inquiry? Partners</h1>
+						<h1 class="form_h1">Up for Projects? Inquiry? Partner?</h1>
 						<h2 class="form_h2">Contact us, We're always up for something cool.</h2>
 					</span>
 				</section>
 				<section class="form_main">
-					<form>
+					<form action="send.php" method="POST">
 						<p class="name">
 	       			    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
 	                    </p>
 	      
 					    <p class="email">
-					     <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+					     <input name="email" type="text" class="validate[required,custom[email]] feedback-input email" placeholder="Email" />
 					    </p>
 
 					    <p class="name">
-					    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+					    <input name="subject" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input email" placeholder="Subject" />
 					    </p>
 	      
 				        <p class="text">
-				        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+				        <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
 				        </p>
 						<div class="submit">
-					      <input type="submit" value="SEND" id="button-blue"/>
+					      <input type="submit" value="SEND" name="submit" id="button-blue"/>
 					      <div class="ease"></div>
 					    </div>
 					</form>	
@@ -137,10 +137,10 @@
 	<footer>
 		<nav>
 			<ul>
-				<li class="mission firstSlide"><a href="#Mission" class="block"><span><img src="images/philippine_logo.png" alt="Philippine logo"></span>Our Mission</a></li>
-				<li class="team extend secondSlide"><a href="#TeamWebnified" class="block"><span><img src="images/team_logo.png" alt="Team logo"></span>The Team</a></li>
-				<li class="reach extend thirdSlide"><a href="#ReachUs" class="block"><span><img src="images/mail_logo.png" alt="Mail logo"></span>Reach Us</a></li>
-				<li id="webnified">From <a href="www.webnified.com" class="link">Webnified&trade;</a> with love <a href="www.webnified.com"><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
+				<li class="mission firstSlide buttons" id="active"><a href="#Mission" class="block"><span><img src="images/philippine_logo.png" alt="Philippine logo"></span>Our Mission</a></li>
+				<li class="team extend secondSlide buttons"><a href="#TeamWebnified" class="block"><span><img src="images/team_logo.png" alt="Team logo"></span>The Team</a></li>
+				<li class="reach extend thirdSlide buttons"><a href="#ReachUs" class="block"><span><img src="images/mail_logo.png" alt="Mail logo"></span>Reach Us</a></li>
+				<li id="webnified">From <a href="#" class="link">Webnified&trade;</a> with love <a href="www.webnified.com"><img src="images/webnified_logo.png" alt="webnified logo"></a></li>
 			</ul>
 		</nav>
 	</footer>

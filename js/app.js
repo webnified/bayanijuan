@@ -12,5 +12,12 @@ $(document).ready(function (){
 			$('.thirdSlide').click(function(){
 				$.fn.fullpage.moveTo(0,2);
 			});
+			$('.buttons').click(function(){
+				var activeButton = $(this).attr('id');
+				if(activeButton != "active"){
+					$('#active').attr('id','');
+					$(this).attr('id','active');					
+				}
+			});
 			$.fn.fullpage.setKeyboardScrolling(false);
 		});
